@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.huhu.fragment.MyselfPageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#fc0d0d">
+
+        <Button
+            android:id="@+id/btn_login_myself_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登录" />
+
+        <LinearLayout
+            android:id="@+id/layout_user_myself_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/img_user_myself_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txt_user_myself_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/my_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#99ff0000"
+        android:drawableLeft="@mipmap/firsthome_pic"
+        android:drawableRight="@mipmap/ic_process"
+        android:gravity="center|left"
+        android:text="我的订单"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/my_have"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#99ff0000"
+        android:drawableLeft="@mipmap/firsthome_pic"
+        android:drawableRight="@mipmap/ic_process"
+        android:gravity="center|left"
+        android:text="我的收藏"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/my_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#99ff0000"
+        android:drawableLeft="@mipmap/firsthome_pic"
+        android:drawableRight="@mipmap/ic_process"
+        android:gravity="center|left"
+        android:text="我的地址"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

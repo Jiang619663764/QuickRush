@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.example.huhu"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories{
+    flatDir{
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    compile project(':PullToRefresh')
+    //轮播图
+    compile 'com.android.support:support-v4:+'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    //网络请求
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    //图片缓存
+    compile 'com.facebook.fresco:fresco:0.9.0+'
+    //三级联动省市区
+    compile 'com.bigkoo:pickerview:2.0.8'
+    compile files('libs/BmobSDK_V3.4.5_1111.jar')
+    compile name: 'SMSSDK-2.0.2', ext: 'aar'
+    compile name: 'SMSSDKGUI-2.0.2', ext: 'aar'
+    compile 'com.android.support:recyclerview-v7:23.2.0'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile files('libs/alipaySdk-20160223.jar')
+}

@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.huhu.fragment.ShoppingPageFragment">
+
+    <com.example.huhu.view.MyToolBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:isShowing="false"
+        app:rightButton="@mipmap/vip_pic"
+        app:title="购物车" />
+    <!-- TODO: Update blank fragment layout -->
+    <com.example.huhu.view.ShoppingListView
+        android:id="@+id/listview_shopping_page"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@android:color/darker_gray"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="合计：100"/>
+        <Button
+            android:id="@+id/pay_shopping_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="结算"/>
+    </LinearLayout>
+
+</LinearLayout>
